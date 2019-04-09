@@ -10,14 +10,10 @@ var rspvRouter = require('./routes/rsvp');
 
 var app = express();
 
-//Set up mongoose connection
+// //Set up mongoose connection
 var mongoose = require('mongoose');
-
-// USE YOUR OWN CONNECTION STRING
-// var mongoDB = 'mongodb+srv://cs_test:P1ng@P0ng@cluster0-mhpvz.gcp.mongodb.net/merndb?retryWrites=true';
-var mongoDB = 'mongodb+srv://cs_test:P1ng@P0ng@cluster0-mhpvz.gcp.mongodb.net/merndb?retryWrites=true';
-
-mongoose.connect(mongoDB, {useNewUrlParser: true});
+var mongoDB = 'mongodb+srv://admin:admin@cluster0-higgl.mongodb.net/mongoTest?retryWrites=true'
+mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
