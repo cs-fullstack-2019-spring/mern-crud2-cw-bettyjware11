@@ -1,3 +1,6 @@
+POINTS: 2
+KEY: Most of the work is here, but missing edit and delete. List was all that was required.
+
 ## MERN/CRUD Classwork
 
 ### Exercise:
